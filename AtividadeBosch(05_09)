@@ -1,0 +1,64 @@
+import random
+
+numero = random.randint(0, 1001)
+tentativas = 1
+while True:
+    try:
+        palpite = int(input("Tente acertar o número sorteado: "))
+    except:
+        None
+
+
+    if palpite == numero:
+        print(f"Parabéns você acertou!, o número é {numero}")
+        print(f"Foram necessárias {tentativas} tentativas.")
+        break
+    if palpite in range(numero-3, numero) or palpite in range(numero, numero+3):
+        print("Tá quase lá!!")
+    elif palpite > numero:
+        print("Muito alto")
+    else:
+        print("Muito baixo")
+    tentativas += 1
+
+
+
+#Criação de um Dicionário com os valores de cada letra do alfabeto(a:0,b:1....)
+AbcChave = {}
+alfabeto = "a b c d e f g h i j k l m n o p q r s t u v w x y z"
+abc = alfabeto.split(" ")
+for i in range(26): 
+  AbcChave.update({abc[i] : i})
+
+#Dicionário com os binarios de 0 a 9
+NumChave = {"0":"0000", "1":"0001",	"2":"0010", "3":"0011", "4" :"0100", "5":"0101", "6":"0110", "7":"0111", "8":"1000", "9":"1001"}
+
+
+def criptografar():
+    
+    senha = input("Digite a senha que você deseja criptografar: ")
+    senhaCriptografada =[]
+
+    for i in senha:    
+      if i.isdigit() == True:#numeros
+        
+        senhaCriptografada.append(NumChave[i])
+      elif i.isalpha() == True:#letras
+        for j in AbcChave:
+          if i == j: 
+            num = AbcChave[i]#armazena o valor da letra indicado no dicionario AbcChave       
+            if num < 10:#para letras do A ao J         
+              senhaCriptografada.append(NumChave[str(num)])
+            elif num < 20:                              #Para letras do K ao T (pq no valor do dicionario elas ja são maiores q 10,             
+                senhaCriptografada.append(NumChave["1"])# ent é necessario por exemplo 10: adicionar o valor de 1 e zero) 
+                senhaCriptografada.append(NumChave[str(num - 10)])
+            else: #Para letras do U ao Z               
+                senhaCriptografada.append(NumChave["2"])
+                senhaCriptografada.append(NumChave[str(num-20)])
+      else:#Caracteres especiais
+        senhaCriptografada.append(NumChave["0"])
+
+
+    print("A senha criptografada é:", "_".join(senhaCriptografada))
+
+criptografar()
