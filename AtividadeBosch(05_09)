@@ -36,7 +36,7 @@ NumChave = {"0":"0000", "1":"0001",	"2":"0010", "3":"0011", "4" :"0100", "5":"01
 
 def criptografar():
     
-    senha = input("Digite a senha que você deseja criptografar: ")
+    senha = input("Digite a senha que você deseja criptografar: ").lower()
     senhaCriptografada =[]
 
     for i in senha:    
