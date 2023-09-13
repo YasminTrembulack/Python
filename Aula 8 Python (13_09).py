@@ -41,16 +41,18 @@ class Livro:
 
     def sobreLivro(self):
         print(f"O livro {self.__titulo} tem {self.__totalPag} páginas no Total.")
+    
+    def verificarProgresso(self):
+        porcentagem = (self.__pagLida * 100) / self.__totalPag
+        print(f"O progresso do livro é de {round(porcentagem, 2)}%")
 
     def setLidas(self, lidas):
-        del Livro.todos[self.__titulo]
-        self.__pagLida = lidas
         Livro.todos.update({self.__titulo : [{"Total:": self.__totalPag, "Lidas: ": lidas}]})
+        self.__pagLida = lidas
 
     def setTotalPag(self, total):
-        del Livro.todos[self.__titulo]
-        self.__totalPag = total
         Livro.todos.update({self.__titulo : [{"Total:": total, "Lidas: ": self.__pagLida}]})
+        self.__totalPag = total
 
     def setTitulo(self, titulo):
         del Livro.todos[self.__titulo]
@@ -60,10 +62,7 @@ class Livro:
     def verBiblio(self):
         print(f"A Biblioteca possuí os livros: {Livro.todos}")
 
-    def verificarProgresso(self):
-        porcentagem = (self.__pagLida * 100) / self.__totalPag
-        print(f"O progresso do livro é de {round(porcentagem, 2)}%")
-
+    
 
 l1 = Livro("A Rainha Vermelha", 350, 100)
 l2 = Livro("A Seleção", 100, 30)
@@ -72,13 +71,12 @@ l3 = Livro("Jogos Vorazes", 635, 600)
 l2.setTitulo("Assim que acaba")
 l2.setTotalPag(1000)
 l3.setLidas(10)
+l1.setLidas(300)
 l2.sobreLivro()
 l1.verBiblio()
 l1.verificarProgresso()
 
 #=================================
-
-
 
     
 
