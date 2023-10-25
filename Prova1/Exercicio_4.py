@@ -1,3 +1,29 @@
+# agenda = {}
+# def incluir_novo_nome(nome: str, telefones: list):
+
+#     if nome not in agenda:
+#         agenda[nome] = telefones
+#     else:
+#         agenda[nome + " new"] = telefones
+
+# def incluir_telefone(nome: str, telefone: str):
+#     if nome not in agenda:
+#         #raise Exception(f"{nome} não está na agenda!!!")
+#         add = input("Adicionar nova pessoa? (y/n)")
+#         if add == "y":
+#             incluir_novo_nome(nome, telefone)
+#     agenda[nome.lower()].append(telefone)
+
+# incluir_novo_nome("yas", ["123"])
+# print(agenda)
+# incluir_telefone("yas", "456")
+# print(agenda)
+# incluir_telefone("aaa", "111")
+
+
+
+
+
 # 4. Escreva um programa para armazenar uma agenda de telefones em um dicionário. Cada
 # pessoa pode ter um ou mais telefones e a chave do dicionário é o nome da pessoa. Seu
 # programa deve ter as seguintes funções:
@@ -15,6 +41,12 @@
 # excluirNome – essa função exclui uma pessoa da agenda.
 # consultarTelefone – essa função retorna os telefones de uma pessoa na agenda.
 
+
+
+
+
+
+
 agenda_telefonica = {}
 
 def IncluirNovoNome(nome, telefones):
@@ -25,7 +57,6 @@ def IncluirTelefone(nome, telefone):
 
 def ExcluirTelefone(telefone):
     pass
-
 
 
 while True:
@@ -75,6 +106,3 @@ while True:
         # excluirTelefone()
     elif op == 5: 
         break
-
-
-
