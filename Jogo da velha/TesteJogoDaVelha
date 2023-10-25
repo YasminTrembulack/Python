@@ -85,37 +85,37 @@ def jogar_jogo_da_velha():
               computador = random.randint(1, 9)
 
 
-  if tabuleiro[0] == "X" and tabuleiro[4] == "X" and tabuleiro[8] == "X":
-    print(tabuleiro)
-    print("Você ganhou!")
+  # if tabuleiro[0] == "X" and tabuleiro[4] == "X" and tabuleiro[8] == "X":
+  #   print(tabuleiro)
+  #   print("Você ganhou!")
     
-  elif tabuleiro[2] == "X" and tabuleiro[4] == "X" and tabuleiro[6] == "X" or tabuleiro[2] == "@" and tabuleiro[4] == "@" and tabuleiro[6] == "@":
-    print(tabuleiro)
-    print("Você ganhou!")
+  # elif tabuleiro[2] == "X" and tabuleiro[4] == "X" and tabuleiro[6] == "X" or tabuleiro[2] == "@" and tabuleiro[4] == "@" and tabuleiro[6] == "@":
+  #   print(tabuleiro)
+  #   print("Você ganhou!")
     
-  elif tabuleiro[0] == "X" and tabuleiro[1] == "X" and tabuleiro[2] == "X" or tabuleiro[0] == "@" and tabuleiro[1] == "@" and tabuleiro[2] == "@":
-    print(tabuleiro)
-    print("Você ganhou!")
+  # elif tabuleiro[0] == "X" and tabuleiro[1] == "X" and tabuleiro[2] == "X" or tabuleiro[0] == "@" and tabuleiro[1] == "@" and tabuleiro[2] == "@":
+  #   print(tabuleiro)
+  #   print("Você ganhou!")
     
-  elif tabuleiro[3] == "X" and tabuleiro[4] == "X" and tabuleiro[5] == "X" or tabuleiro[3] == "@" and tabuleiro[4] == "@" and tabuleiro[5] == "@":
-    print(tabuleiro)
-    print("Você ganhou!")
+  # elif tabuleiro[3] == "X" and tabuleiro[4] == "X" and tabuleiro[5] == "X" or tabuleiro[3] == "@" and tabuleiro[4] == "@" and tabuleiro[5] == "@":
+  #   print(tabuleiro)
+  #   print("Você ganhou!")
             
-  elif tabuleiro[6] == "X" and tabuleiro[7] == "X" and tabuleiro[8] == "X" or tabuleiro[6] == "@" and tabuleiro[7] == "@" and tabuleiro[8] == "@":
-    print(tabuleiro)
-    print("Você ganhou!")
+  # elif tabuleiro[6] == "X" and tabuleiro[7] == "X" and tabuleiro[8] == "X" or tabuleiro[6] == "@" and tabuleiro[7] == "@" and tabuleiro[8] == "@":
+  #   print(tabuleiro)
+  #   print("Você ganhou!")
            
-  elif tabuleiro[0] == "X" and tabuleiro[3] == "X" and tabuleiro[6] == "X" or tabuleiro[0] == "@" and tabuleiro[3] == "@" and tabuleiro[6] == "@":
-    print(tabuleiro)
-    print("Você ganhou!")
+  # elif tabuleiro[0] == "X" and tabuleiro[3] == "X" and tabuleiro[6] == "X" or tabuleiro[0] == "@" and tabuleiro[3] == "@" and tabuleiro[6] == "@":
+  #   print(tabuleiro)
+  #   print("Você ganhou!")
            
-  elif tabuleiro[1] == "X" and tabuleiro[4] == "X" and tabuleiro[7] == "X" or tabuleiro[1] == "@" and tabuleiro[4] == "@" and tabuleiro[7] == "@":
-    print(tabuleiro)
-    print("Você ganhou!")
+  # elif tabuleiro[1] == "X" and tabuleiro[4] == "X" and tabuleiro[7] == "X" or tabuleiro[1] == "@" and tabuleiro[4] == "@" and tabuleiro[7] == "@":
+  #   print(tabuleiro)
+  #   print("Você ganhou!")
             
-  elif tabuleiro[2] == "X" and tabuleiro[5] == "X" and tabuleiro[8] == "X" or tabuleiro[2] == "@" and tabuleiro[5] == "@" and tabuleiro[8] == "@":
-  print(tabuleiro)
-  print("Você ganhou!")
+  # elif tabuleiro[2] == "X" and tabuleiro[5] == "X" and tabuleiro[8] == "X" or tabuleiro[2] == "@" and tabuleiro[5] == "@" and tabuleiro[8] == "@":
+  # print(tabuleiro)
+  # print("Você ganhou!")
             
             
                 

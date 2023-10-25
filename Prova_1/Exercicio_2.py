@@ -3,3 +3,10 @@
 # o número lido não for maior que zero, o programa retornará com a mensagem “Número
 # Inválido. Tente novamente”. (Utilize try/except)
 
+class MenorQueZero(Exception):
+    pass
+
+try:
+    int(input("Digite um número: "))
+except:
+    print("a")
