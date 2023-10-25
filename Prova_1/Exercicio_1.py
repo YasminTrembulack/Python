@@ -6,6 +6,8 @@
 arquivo = open("Prova/clientes.txt", "r")
 nomes = open("Prova/Nomes_limpos.txt", "w")
 
+#with open("Prova/clientes.txt", "r") as arquivo:
+
 lista_nomes = []
 contador = 0
 
@@ -24,3 +26,6 @@ for linhas in arquivo:
 
 nomes.write("\n".join(lista_nomes))
 print(f"Foram recuperados {contador} dados.")    
+
+arquivo.close()
+nomes.close()
