@@ -5,8 +5,20 @@
 
 class MenorQueZero(Exception):
     pass
+while True:
+    try:
+        numero = input("Digite um número: ")
+        soma = 0
 
-try:
-    int(input("Digite um número: "))
-except:
-    print("a")
+        if int(numero) < 0:
+            raise MenorQueZero
+        else:
+            for n in numero:
+
+                soma += int(n)
+            
+            print(f"A soma dos algarismos é {soma}.")
+            break   
+
+    except MenorQueZero:
+        print("Número menor que zero. Tente novamente...")
