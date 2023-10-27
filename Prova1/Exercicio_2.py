@@ -5,6 +5,7 @@
 
 class MenorQueZero(Exception):
     pass
+
 while True:
     try:
         numero = input("Digite um número: ")
