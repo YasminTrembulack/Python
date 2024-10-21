@@ -1,4 +1,4 @@
-from Python.Tests.arquivo_funcoes import verificar_email, Calculadora
+from arquivo_funcoes import verificar_email, Calculadora
 
 def is_positive(num):
     return num > 0
